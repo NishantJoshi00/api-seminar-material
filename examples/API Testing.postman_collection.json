@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "c9a61be7-490f-488d-b51f-ab464b75b5e7",
+		"name": "API Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Shortner",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "url",
+									"value": "www.google.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/shorten",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"shorten"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View Page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Open Weather",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=Navi Mumbai&appid=fd05de4f336256ec996f75e85841bba4",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Navi Mumbai"
+						},
+						{
+							"key": "appid",
+							"value": "fd05de4f336256ec996f75e85841bba4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fixer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://data.fixer.io/api/latest?access_key=ef82a67596e387037a5597566c948c24&symbols=USD,JPY,INR",
+					"protocol": "http",
+					"host": [
+						"data",
+						"fixer",
+						"io"
+					],
+					"path": [
+						"api",
+						"latest"
+					],
+					"query": [
+						{
+							"key": "access_key",
+							"value": "ef82a67596e387037a5597566c948c24"
+						},
+						{
+							"key": "symbols",
+							"value": "USD,JPY,INR"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "datamuse",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.datamuse.com/words?sp=ele*&max=2",
+					"protocol": "https",
+					"host": [
+						"api",
+						"datamuse",
+						"com"
+					],
+					"path": [
+						"words"
+					],
+					"query": [
+						{
+							"key": "sp",
+							"value": "ele*"
+						},
+						{
+							"key": "max",
+							"value": "2"
+						},
+						{
+							"key": "ml",
+							"value": "song",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cowin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=400001&date=26-12-2021",
+					"protocol": "https",
+					"host": [
+						"cdn-api",
+						"co-vin",
+						"in"
+					],
+					"path": [
+						"api",
+						"v2",
+						"appointment",
+						"sessions",
+						"public",
+						"calendarByPin"
+					],
+					"query": [
+						{
+							"key": "pincode",
+							"value": "400001"
+						},
+						{
+							"key": "date",
+							"value": "26-12-2021"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
